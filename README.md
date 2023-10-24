@@ -14,3 +14,22 @@ You can install the required Python packages using the provided `requirements.tx
 ```
 pip install -r requirements.txt
 ```
+
+## How to Use
+
+1. **Insert Your Discord Bot Token**
+
+    Before you can run the bot, you'll need to insert your own Discord bot token into the code. Locate the designated section for the token and replace `YOUR_BOT_TOKEN_HERE` with your actual token.
+
+    ```python
+    # Insert your Discord bot token here
+    bot_token = 'YOUR_BOT_TOKEN_HERE'
+    ```
+
+2. **Run the Bot**
+
+    Once you've added your bot token, you can proceed to run the bot. Depending on your environment, you can start it via a terminal or command prompt.
+
+    ```bash
+    python main.py
+    ```
