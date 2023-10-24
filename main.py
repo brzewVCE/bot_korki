@@ -3,7 +3,7 @@ import discord
 intents = discord.Intents.default()
 intents.members = True
 client = discord.Client(intents=intents)
-token = #your discord bot token
+token = 'YOUR_BOT_TOKEN_HERE'
 
 @client.event
 async def on_member_join(member):
