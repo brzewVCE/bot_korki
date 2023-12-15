@@ -7,12 +7,13 @@ token = 'YOUR_BOT_TOKEN_HERE'
 
 @client.event
 async def on_member_join(member):
-    await member.send("Hej, witam na moich lekcjach! Proszę, podaj Imię i Nazwisko:")
+    await member.send("Hej, witam na moich lekcjach! Proszę, podaj Imię i Nazwisko:")    #Welcome message, gets user's username
     name = await client.wait_for("message", check=lambda message: message.author == member)
     name = name.content
 
     await member.edit(nick=name)
 
+    #If that username is not present, it creates a category with voice and text channel for the user
     guild = member.guild
     category = discord.utils.get(guild.categories, name=name)
     if not category:
